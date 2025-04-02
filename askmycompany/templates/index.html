@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>AskMyCompany</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    <div class="container py-5">
+      <h1 class="mb-4">Ask Our Policy Assistant</h1>
+      <form method="POST" class="mb-4">
+        <div class="input-group">
+          <input type="text" name="question" class="form-control" placeholder="Ask your question" required>
+          <button class="btn btn-primary">Ask</button>
+        </div>
+      </form>
+      {% if history %}
+        <div class="card p-3">
+          <h5>Chat History</h5>
+          <ul class="list-group list-group-flush">
+            {% for entry in history %}
+              <li class="list-group-item"><strong>Q:</strong> {{ entry[0] }}<br><strong>A:</strong> {{ entry[1] }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+    </div>
+  </body>
+</html>

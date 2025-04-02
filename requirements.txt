@@ -1,0 +1,5 @@
+flask
+langchain
+sentence-transformers
+faiss-cpu
+llama-cpp-python
