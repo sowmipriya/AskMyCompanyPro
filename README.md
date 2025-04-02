@@ -96,6 +96,3 @@ Auto-deploy on every `main` push via `.github/workflows/deploy.yml`.
 
 ---
 
-## 🛡️ License
-
-MIT License – Use it, share it, improve it.
