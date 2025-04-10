@@ -53,7 +53,7 @@ Edit these flags in `app.py` to change your LLM.
 ## 📦 Install Locally (Dev Mode)
 
 ```bash
-git clone https://github.com/<your-username>/AskMyCompanyPro.git
+git clone https://github.com/sowmipriya/AskMyCompanyPro.git
 cd AskMyCompanyPro
 pip install -r requirements.txt
 
